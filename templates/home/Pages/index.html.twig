@@ -1,0 +1,341 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block stylesheets %}
+
+{{ encore_entry_link_tags('scss/home') }}
+
+{% endblock %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STAGEMINUTE</title>
+<!-- ICONSCOUT CDN -->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+<!-- GOOGLE FONTS (MONTSERRAT) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ETOILES -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+<nav>
+    <div class="container nav_container">
+        <a href="index.html"><h4>STAGEMINUTE</h4></a>
+        <ul class="nav_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a type="button" class="btn-login" href="{{path ("login")}}">Login</a></li>
+        </ul>
+        
+            
+<button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+<button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+</nav>
+<!-- ==============END NAVBAR ============== -->
+
+<header>
+<div class="container header_container">
+    <div class="header_left">
+<h1>Promote your skills and join our network of companies</h1>
+<p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa atque quasi illum, impedit nesciunt earum ducimus a amet veniam cum.
+</p>
+<a href="courses.html" class="btn btn-primary">Get Started</a>
+    </div>
+    <div class="header_right">
+<div class="header_right-image">
+    <img class="offrePic" height = '100%' src={{ asset ('img/header.svg')}}>
+</div>
+    </div>
+</div>
+
+</header>
+<!-- ==============END HEADER ============== -->
+
+
+
+
+
+<section class="categories">
+    <div class="container categories_container">
+        <div class="categories_left">
+        <h1>About</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde sapiente labore ut sit atque animi amet eum deleniti vero.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="categories_right">
+        <article class="category">
+           <span class="category_icon"><img src="./images/avis1.jpg"><h4>Sarah</h4></span>
+
+          <div class="etoiles"><span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span> </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, veritatis.</p>
+           
+            
+        </article>
+
+
+        <article class="category">
+            <span class="category_icon"><img src="./images/avis6.jpg"><h4>Hugo</h4></span>
+
+            <div class="etoiles"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span> </div>
+
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, veritatis.</p>
+
+        </article>
+
+
+        <article class="category">
+            <span class="category_icon"><img src="./images/avis3.png"><h4>Louis</h4></span>
+
+            <div class="etoiles"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> </div>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, veritatis.</p>
+
+        </article>
+
+
+        <article class="category">
+            <span class="category_icon"><img src="./images/avis4.jpg"><h4>Julie</h4></span>
+
+            <div class="etoiles"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> </div>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, veritatis.</p>
+
+        </article>
+
+        <article class="category">
+            <span class="category_icon"><img src="./images/avis5.jpg"><h4>Grégory</h4></span>
+
+            <div class="etoiles"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> </div>
+         
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, veritatis.</p>
+
+        </article>
+
+        <article class="category">
+            <span class="category_icon"><img src="./images/avis2.jpg"><h4>Marc</h4></span>
+            <div class="etoiles"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span> </div>
+     
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, veritatis.</p>
+
+        </article>
+    </div>
+    </div>
+</div>
+</section>
+<!-- ================= END CATEGORIES ================-->
+
+
+<section class="courses">
+   <center> <h2>Our Popular Courses</h2></center>
+    <div class="container courses_container">
+<article class="course">
+    <div class="course_image">
+        <img src={{ asset ('img/image4.png')}}> 
+    </div>
+<div class="course_info">
+    <h4>Responsive Social Media Website</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet fuga maxime et iusto alias velit.
+
+    </p>
+    <a href="course.html" class="btn">Learn More</a>
+</div>
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={{ asset ('img/image2.jpg')}}> 
+    </div>
+    <div class="course_info">
+        <h4>Responsive Social Media Website</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet fuga maxime et iusto alias velit.
+    
+        </p>
+        <a href="course.html" class="btn">Learn More</a>
+    </div>
+</article>
+
+<article class="course">
+    <div class="course_image">
+        <img src={{ asset ('img/image3.jpg')}}> 
+    </div>
+ <div class="course_info">
+    <h4>Responsive Social Media Website</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet fuga maxime et iusto alias velit.
+
+    </p>
+    <a href="course.html" class="btn">Learn More</a>
+ </div>
+</article>
+    </div>
+</section>
+<!-- ================= END COURSES ================-->
+
+<section class="faqs">
+   <center><h2>Frequently Asked Questions</h2></center>
+<div class="container faqs_container">
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Comment savoir si on est cringe ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Comment savoir si Quentin est le plus cringe ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Es-ce que être cringe est une maladie ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Pouvons nous mourir du cringe ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Peut-on mesurer un taux de cringe ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Etre cringe es-ce héréditaire ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Où faut-il consulter ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Sortir avec sa cousine es-ce cringe ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Je bois et fume sans m'arrêter, je m'appel Quentin ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+
+
+    <article class="faq">
+        <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>Je rigole bizarrement suis-je cringe ?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam aspernatur sunt voluptatem ab dolorem quam omnis? Odio, voluptates expedita!</p>
+            </div>
+
+       
+    </article>
+</div>
+</section>
+<!-- ================= END FAQ ================-->
+    </body>
+</html>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('js/home') }}
+{% endblock %}
