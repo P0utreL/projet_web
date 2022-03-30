@@ -1,0 +1,93 @@
+{% block body %}
+
+ <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./style.css">
+<!-- MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+
+        </head>
+        <body>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script language="JavaScript" type="text/javascript" src="dashboard.js"></script>
+<div class="container">
+    <aside>
+        <div class="top">
+            <div class="logo">
+        
+                <h2>STAGE<span class="primary">MINUTE</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </div>
+        </div>
+        <div class="sidebar">
+
+            <a href="#">
+                <span class="material-icons-sharp">
+                    home
+                    </span>
+                    <h3>Home</h3>
+            </a>
+
+
+            <a href="index.html">
+                <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+            </a>
+      
+      
+            <a href="offers.html">
+                <span class="material-icons-sharp">description</span>
+                    <h3>Offers</h3>
+            </a>
+       
+    
+            <a href="companies.html">
+                <span class="material-icons-sharp">store</span>
+                    <h3>Companies</h3>
+            </a>
+  
+ 
+            <a href="tutor.html">
+                <span class="material-icons-sharp">manage_accounts</span>
+                    <h3>Tutor</h3>
+            </a>
+ 
+
+            <a href="delegate.html">
+                <span class="material-icons-sharp">assignment_ind</span>
+                    <h3>Delegate</h3>
+                    <span class="message-count">3</span>
+            </a>
+    
+
+            <a href="students.html" class="active">
+                <span class="material-icons-sharp">school</span>
+                    <h3>Students</h3>
+            </a>
+
+            <a href="applications.html">
+                <span class="material-icons-sharp">send</span>
+                    <h3>Applications</h3>
+            </a>
+
+
+            <a href="settings.html">
+                <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+            </a>
+      
+
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+            </a>
+</div>
+    </aside>
+
+{% endif %}

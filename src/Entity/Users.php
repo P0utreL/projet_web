@@ -42,7 +42,7 @@ class Users implements UserInterface, \Serializable
      *
      * @ORM\Column(name="roles", type="json", nullable=false)
      */
-    private $roles;
+    private $roles = [];
 
     public function getIdUser(): ?int
     {

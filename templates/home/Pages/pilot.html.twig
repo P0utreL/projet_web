@@ -1,0 +1,344 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+{{ encore_entry_link_tags('scss/pilot') }}
+
+{% endblock %}
+
+{% block head %}
+  
+  <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./style.css">
+<!-- MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+        <body>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script language="JavaScript" type="text/javascript" src="dashboard.js"></script>
+<div class="container">
+    <aside>
+        <div class="top">
+            <div class="logo">
+        
+                <h2>STAGE<span class="primary">MINUTE</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </div>
+        </div>
+        <div class="sidebar">
+
+            <a href="#">
+                <span class="material-icons-sharp">
+                    home
+                    </span>
+                    <h3>Home</h3>
+            </a>
+
+
+            <a href="index.html">
+                <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+            </a>
+      
+
+        
+            <a href="offers.html">
+                <span class="material-icons-sharp">description</span>
+                    <h3>Offers</h3>
+            </a>
+       
+
+
+      
+            <a href="companies.html">
+                <span class="material-icons-sharp">store</span>
+                    <h3>Companies</h3>
+            </a>
+  
+
+
+      
+            <a href="tutor.html">
+                <span class="material-icons-sharp">manage_accounts</span>
+                    <h3>Tutor</h3>
+            </a>
+ 
+
+            <a href="delegate.html">
+                <span class="material-icons-sharp">assignment_ind</span>
+                    <h3>Delegate</h3>
+                    <span class="message-count">3</span>
+            </a>
+    
+
+
+            <a href="students.html" class="active">
+                <span class="material-icons-sharp">school</span>
+                    <h3>Students</h3>
+            </a>
+
+
+
+      
+            <a href="applications.html">
+                <span class="material-icons-sharp">send</span>
+                    <h3>Applications</h3>
+            </a>
+
+
+      
+            <a href="settings.html">
+                <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+            </a>
+      
+
+
+
+
+
+
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+            </a>
+</div>
+    </aside>
+    <!----------------------------- END ASIDE ------------>
+    <main>
+        
+       <h1>Dashboard</h1> 
+       <div class="date">
+           <input type="date">
+       </div>
+
+
+           
+          
+
+       <div class="recent-orders">
+           <h2>Recent Offers
+           </h2>
+           <table>
+               <thead>
+                   <tr>
+                       <th>Company Name</th>
+                       <th>Location</th>
+                       <th>Date</th>
+                       <th>Category</th>
+                       <th></th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>Inova Web</td>
+                       <td>Nancy</td>
+                       <td>21/03/2022</td>
+                       <td>Web Integrator</td>
+                       <td class="primary">Details</td>
+                   </tr>
+
+
+                   <tr>
+                    <td>Amazon</td>
+                    <td>Luxembourg</td>
+                    <td>11/03/2022</td>
+                    <td>Software Engineer</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+
+                <tr>
+                    <td>FTMA</td>
+                    <td>Metz</td>
+                    <td>09/03/2022</td>
+                    <td>Computer Engineer</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>HAYS</td>
+                    <td>Paris</td>
+                    <td>06/03/2022</td>
+                    <td>Data Scientist</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>FTMA</td>
+                    <td>Metz</td>
+                    <td>09/03/2022</td>
+                    <td>Computer Engineer</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>AMN</td>
+                    <td>Strasbourg</td>
+                    <td>04/03/2022</td>
+                    <td>IT Technician</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>FTMA</td>
+                    <td>Metz</td>
+                    <td>09/03/2022</td>
+                    <td>Computer Engineer</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>AMN</td>
+                    <td>Strasbourg</td>
+                    <td>04/03/2022</td>
+                    <td>IT Technician</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>AMN</td>
+                    <td>Strasbourg</td>
+                    <td>04/03/2022</td>
+                    <td>IT Technician</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>AMN</td>
+                    <td>Strasbourg</td>
+                    <td>04/03/2022</td>
+                    <td>IT Technician</td>
+                    <td class="primary">Details</td>
+                </tr>
+
+                <tr>
+                    <td>AMN</td>
+                    <td>Strasbourg</td>
+                    <td>04/03/2022</td>
+                    <td>IT Technician</td>
+                    <td class="primary">Details</td>
+                </tr>
+               </tbody>
+           </table>
+           <a href=./offers.html>Show All</a>
+       </div>
+    </main>
+<!--------------END OF MAIN ------------------>
+<div class="right">
+    <div class="top">
+        <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+            <div class="info">
+                <p>Hey, <b>Wassim</b></p>
+                <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+                <img src="./images/wassim.jpeg">
+            </div>
+        </div>
+    </div>
+    <!-- END OF TOP -->
+    <div class="recent-updates">
+        <h2>Recent Updates</h2>
+        <div class="updates">
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="./images/wassim.jpeg">
+                </div>
+                <div class="message">
+                    <p><b>Wassim Bouanane</b> updated a post.</p>
+                    <small ckass="text-muted">2 Minutes Ago</small>
+                </div>
+            </div>
+
+
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="./images/virgile.jpg">
+                </div>
+                <div class="message">
+                    <p><b>Virgile Nicolas</b> updated a post.</p>
+                    <small ckass="text-muted">2 Minutes Ago</small>
+                </div>
+            </div>
+
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="./images/quentin.jpg">
+                </div>
+                <div class="message">
+                    <p><b>Quentin Jolly</b> updated a post.</p>
+                    <small ckass="text-muted">2 Minutes Ago</small>
+                </div>
+            </div>
+
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="./images/wassim.jpeg">
+                </div>
+                <div class="message">
+                    <p><b>Wassim Bouanane</b> updated a post.</p>
+                    <small ckass="text-muted">2 Minutes Ago</small>
+                </div>
+            </div>
+
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="./images/quentin.jpg">
+                </div>
+                <div class="message">
+                    <p><b>Quentin Jolly</b> updated a post.</p>
+                    <small ckass="text-muted">2 Minutes Ago</small>
+                </div>
+            </div>
+
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="./images/wassim.jpeg">
+                </div>
+                <div class="message">
+                    <p><b>Wassim Bouanane</b> updated a post.</p>
+                    <small ckass="text-muted">2 Minutes Ago</small>
+                </div>
+            </div>
+
+            <div class="update">
+                <div class="profile-photo">
+                    <img src="./images/quentin.jpg">
+                </div>
+                <div class="message">
+                    <p><b>Quentin Jolly</b> updated a post.</p>
+                    <small class="text-muted">2 Minutes Ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- END RECENT UPDATES------------->
+   
+
+</div>
+</div>
+
+</div>
+
+        </body>
+</html>
+{% endblock %}
+

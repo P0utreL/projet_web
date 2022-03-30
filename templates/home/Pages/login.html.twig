@@ -1,58 +1,52 @@
-{% extends 'base.html.twig' %}
-
 {% block title %}Veuillez vous athentifier{% endblock %}
 
 {% block stylesheets %}
-{% endblock %}
 
+{{ encore_entry_link_tags('scss/login') }}
 
+{% endblock %} {% block body %}
 
-{% block body %}
-
-
-
-<body class="body">
-    <div align="center">
-		<!--White box-->
-		<div class="container">
-
-        {% if error %}
-            <div class="col-4" id="error">
-                <div class="card">
-                    <div class="card-body">
-                        {{error.messageKey | trans(error.messagedata, 'security')}}
-                    </div>
+<body>
+    <center><H2 style="color:white;position:relative;top:4rem;font-style: Quicksand;">Log in and apply for different offers.</H2></center>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" action="{{path ('login')}}" method="post">
+					{% if error %}
+						<div class="col-4" id="error">
+							<div class="card">
+								<div class="card-body">
+									{{error.messageKey | trans(error.messagedata, 'security')}}
+								</div>
+							</div>
+						</div>
+					{% endif %}
+						<div class="login__field">
+							<i class="login__icon fas fa-user"></i>
+							<input type="text" class="login__input" id="uname" name="_username" placeholder="Username">
+						</div>
+						<div class="login__field">
+							<i class="fa-solid fa-eye-slash" id="eye" onclick="changer()"></i>
+							<input type="password" class="login__input" id="pswd" name="_password" placeholder="Password">
+						</div>
+						<button class="button login__submit">
+							<span class="button__text">Log In</span>
+							<i class="button__icon fas fa-chevron-right"></i>
+						</button>				
+					</form>
+					<div class="social-login">
+						<a href="index.html" style="text-decoration: none;color:white;"><h3>STAGEMINUTE</h3></a>
+						<div class="social-icons">
+						</div>
                 </div>
             </div>
-        {% endif %}
-
-			<form action="{{path ('login')}}" method="post">
-				<div align="center">
-				  	<!--Input for Username-->
-			 	   <input type="text" class="user" id="uname" name="_username" placeholder="Username">
-			 	   <br>
-			 	   		<div>
-			 	   	<!--Input for Password-->
-			 	   			<input type="password" class="pwd" id="pswd" name="_password" placeholder="Password">	
-
-			 	   	<!--Eye for Password-->
-                            <div class="pass">
-                                <i class="fa-solid fa-eye-slash" id="eye" onclick="changer()"></i>
-                            </div>
-				   
-					   	</div>
-			 		 </div>
-			 		<br>
-
-			 	<!--Login Button-->
-			 	<div align="center">
-                    <input type="submit" class="btn" value="login">
-			 	</div>
-			</form>
-		</div>
-	</div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
 
 {% endblock %}
 
-
-    
+{#classe = pwd
+classe = user#}
